@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="name">
+        <input
+          @input="findName()"
+          v-model="name"
+          :class ="{ red : !color && name.length > 0, green : color }"
+          type="text"
+          placeholder="Type your Name..."
+        >
+      </div>
+
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
